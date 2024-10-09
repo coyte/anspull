@@ -4,7 +4,7 @@
     name: ansible-pull
     minute: "0"
     user: root
-    job: "/usr/bin/ansible-pull -U http://gitlab.home.nicksabine.com/nsabine/ansible-baseline -i hosts site.yml > /dev/null 2>&1"
+    job: "/usr/bin/ansible-pull -U https://github.com/coyte/anspull -i hosts site.yml > /dev/null 2>&1"
     cron_file: ansible-pull
 
 
@@ -33,19 +33,19 @@
 
 - name: create user
   ansible.builtin.user:
-    name: nsabine
+    name: niels
     shell: /bin/bash
     groups: sudo
     append: yes
-    uid: 1000
+    uid: 1026
 
-- name: nsabine SSH authorized_keys
-  ansible.posix.authorized_key:
-    user: nsabine
-    state: present
-    key: '{{ item }}'
-  with_file:
-    - files/nsabine.pub
+#- name: nsabine SSH authorized_keys
+#  ansible.posix.authorized_key:
+#    user: nsabine
+#    state: present
+#    key: '{{ item }}'
+#  with_file:
+#    - files/nsabine.pub
 
 - name: sudoers no passwd
   lineinfile:
