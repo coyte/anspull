@@ -36,7 +36,8 @@
 
 - name: create user
   ansible.builtin.user:
-    name: nielsss
+    name: niels
+    password: "$6$Jcoqw1iOizMvC0Wy$Oa.XLZfHZzuotg.rK3YvCNE172ohM2puMryDfUShn6v5veVhPIw0nfQHQ3n5byzkxB7/t0LXTFT7IIt5bSGZc."
     shell: /bin/bash
     groups: sudo
     append: yes
@@ -48,7 +49,7 @@
 #    state: present
 #    key: '{{ item }}'
 #  with_file:
-#    - files/nsabine.pub
+#   - files/nsabine.pub
 
 - name: sudoers no passwd
   lineinfile:
