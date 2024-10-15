@@ -68,4 +68,4 @@
   lineinfile:
     path: /etc/issue
     state: present
-    line: ' ip-address: \4'
+    line: 'ip-address: \4'
