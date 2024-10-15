@@ -63,3 +63,9 @@
   ansible.builtin.systemd:
     name: unattended-upgrades
     state: started
+
+- name: display ip-address on tty console
+  lineinfile:
+    path: /etc/issue
+    state: present
+    line: ' ip-address: \4'
