@@ -1,3 +1,5 @@
 ---
 - name: display hostname
-  debug: "THIS IS GENERIC"
+  debug: 
+    msg:
+    - "THIS IS GENERIC"
