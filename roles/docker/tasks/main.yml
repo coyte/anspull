@@ -36,3 +36,6 @@
     - containerd.io
     - docker-buildx-plugin 
     - docker-compose-plugin
+
+# TODO: Make Docker accessible to ordinary users
+
