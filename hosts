@@ -3,6 +3,7 @@
 
 [docker]
 homelab04
+debian
 
 [kubernetes]
 homelab01
@@ -10,6 +11,6 @@ homelab02
 homelab03
 
 [generic]
-debian
+debian2
 
 
