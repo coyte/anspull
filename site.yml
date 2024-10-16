@@ -9,3 +9,11 @@
 - hosts: docker
   roles:
     - docker
+
+- hosts: kubernetes
+  roles:
+    - kubernetes
+
+- hosts: generic
+  roles:
+    - generic
