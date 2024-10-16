@@ -5,7 +5,6 @@
     weekday: "0"
     hour: "0"
     minute: "0"
-    minute: "0"
     user: root
     job: "/usr/bin/ansible-pull -U https://github.com/coyte/anspull -i hosts site.yml > /dev/null 2>&1"
     cron_file: ansible-pull
